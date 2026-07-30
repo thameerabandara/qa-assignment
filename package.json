@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { "test": "playwright test",
+  "scripts": {
+    "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
-    "mcp": "npx @playwright/mcp"},
+    "mcp": "npx @playwright/mcp",
+    "defects": "ts-node --project tsconfig.json utils/defectReporter.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,7 +17,7 @@
   "devDependencies": {
     "@playwright/mcp": "^0.0.78",
     "@playwright/test": "^1.62.0",
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
     "allure-playwright": "^3.10.2",
     "ts-node": "^10.9.2",
     "typescript": "^7.0.2"

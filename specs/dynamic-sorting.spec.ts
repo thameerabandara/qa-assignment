@@ -32,9 +32,10 @@ test('SMOKE @smoke - Validate Dynamic Catalog Sorting & Price Verification', asy
     console.log('Prices from DOM:', prices);
 
     // Verify prices are in ascending order
-    for (let i = 0; i < prices.length - 1; i++) {
-        expect(prices[i]).toBeLessThanOrEqual(prices[i + 1]);
-    }
+for (let i = 0; i < prices.length - 1; i++) {
+    expect(prices[i]).toBeGreaterThanOrEqual(prices[i + 1]);
+}
+
 
     // Verify UI prices match the expected sorted order
     const expectedPrices = [...prices].sort((a, b) => a - b);

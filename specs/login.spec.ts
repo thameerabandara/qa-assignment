@@ -12,7 +12,7 @@ test.describe('SauceDemo Login', () => {
 
         // Login
         await loginPage.login(
-            'standard_user',
+            'standard_ user',
             'secret_sauce'
         );
 
